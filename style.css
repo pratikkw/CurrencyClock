@@ -87,6 +87,82 @@ body {
     min-height: 100vh;
 }
 
+.preloader{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1000; 
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.5s ease-out;
+}
+
+.preloader::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('images/purchasing_power_06.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 1;
+    z-index: 1;
+}
+
+.preloader::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to bottom, 
+        rgba(248, 250, 252, 0.5), 
+        rgba(248, 250, 252, 0.15)
+    );
+    z-index: 2;
+}
+
+.preloader p{
+    font-size: 2rem;
+    font-weight: bold;
+    color: hsla(0, 0%, 15%, 1);
+    position: relative;
+    z-index: 3;
+    animation: fadeIn 3s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+}
+
+@keyframes fadeIn{
+    0% {
+        opacity: 0;
+    }
+    20% {
+        opacity: 1;
+    }
+    80% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.preloader--hide{
+    opacity: 0;
+    pointer-events: none;
+}
+
+.body--overflow-hidden{
+    overflow: hidden;
+}
+
 /* Header Styles */
 .header {
     background-color: var(--header-bk-color);
@@ -1441,15 +1517,6 @@ input:focus {
     margin-bottom: 1rem;
 }
 
-/* .add-graph-btn:hover {
-    background-color: var(--add-graph-btn-hover-bk-clr);
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-} */
-
-/* .add-graph-btn:active {
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-} */
-
 .add-graph-btn:disabled {
     background-color: var(--add-graph-btn-disabled-bk-clr);
     color: var(--add-graph-btn-disable-txt-clr);
@@ -1472,14 +1539,6 @@ input:focus {
     margin-bottom: 1rem;
 }
 
-/* .reset-btn:hover {
-    background-color: var(--reset-btn-hover-bk-clr);
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-} */
-
-/* .reset-btn:active {
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-} */
 
 .reset-btn:disabled {
     background-color: var(--reset-btn-disabled-bk-clr);

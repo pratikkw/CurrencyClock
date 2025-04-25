@@ -7,6 +7,20 @@ let resultsCount = 0; // track result rows
 let currentCurrency = '₹'; // track current currency symbol
 const colors = ['#52B788', '#3B82F6', '#F97316']; // Green, Blue, Orange for graphs
 
+const preloader = document.querySelector('.preloader');
+const preloaderText = document.querySelector('.preloader p');
+
+// Add overflow hidden to body when page loads
+document.body.classList.add('body--overflow-hidden');
+
+window.addEventListener('load', () => {
+    // Add a small delay to ensure the preloader is visible
+    setTimeout(() => {
+        preloader.classList.add('preloader--hide');
+        document.body.classList.remove('body--overflow-hidden');
+    }, 500);
+}); 
+
 // Set main content height based on viewport
 function setMainContentHeight() {
     const header = document.querySelector('.header');
