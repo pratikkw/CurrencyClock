@@ -218,6 +218,8 @@ function prepareAddGraph() {
 }
 
 function calculate() {
+    document.activeElement.blur(); 
+    
     // Unfreeze all fields and buttons when Calculate is clicked
     document.getElementById('presentAmount').disabled = false;
     document.getElementById('inflationRate').disabled = false;
