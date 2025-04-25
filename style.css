@@ -735,7 +735,8 @@ input:focus {
     .chart-container {
         /* height: 300px; */
         /* min-height: 300px; */
-        height: 500px;
+        /* height: 500px; */
+        height: 550px;
         position: relative;
         background-color: var(--graph-bk-clr);
         border-radius: 8px;
@@ -887,8 +888,10 @@ input:focus {
     .chart-container {
         /* height: 250px; */
         /* min-height: 250px; */
-        height: 500px;
-        min-height: 500px;
+        /* height: 500px;
+        min-height: 500px; */
+        height: 550px;
+        min-height: 550px;
     }
 
     .toggle-switch{
