@@ -280,14 +280,6 @@ input:focus {
     margin: 0;
 }
 
-/* .calculate-btn:hover {
-    background-color: var(--calculator-btn-hover-bk-clr);
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-} */
-
-/* .calculate-btn:active {
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-} */
 
 /* Graph Section Styles */
 .graph-section {
@@ -460,10 +452,6 @@ input:focus {
     transition: text-decoration 0.3s ease;
 }
 
-/* .footer-left a:hover {
-    text-decoration: none;
-} */
-
 .footer-right {
     display: flex;
     flex-direction: column;
@@ -501,10 +489,6 @@ input:focus {
     transition: opacity 0.3s ease;
 }
 
-/* .source-link a:hover {
-    opacity: 0.8;
-} */
-
 .source-link i {
     font-size: 1.35rem;
 }
@@ -524,10 +508,6 @@ input:focus {
     font-weight: 500;
     transition: text-decoration 0.3s ease;
 }
-
-/* .social-links a:hover {
-    text-decoration: none;
-} */
 
 /* Keep GitHub icon styling separate */
 .source-link {
@@ -1605,8 +1585,5 @@ input:focus {
     .reset-btn:active {
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     }
-    
-    
-    
 }
 

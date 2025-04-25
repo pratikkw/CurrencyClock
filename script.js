@@ -122,14 +122,14 @@ document.addEventListener('DOMContentLoaded', () => {
                     position: 'top',
                     labels: {
                         font: {
-                            size: window.innerWidth <= 500 ? 10 : 14,
+                            size: window.innerWidth <= 500 ? 12 : 14,
                             weight: 'bold'
                         },
-                        padding: window.innerWidth <= 500 ? 10 : 20,
+                        padding: window.innerWidth <= 500 ? 12 : 20,
                         usePointStyle: true,
                         pointStyle: 'circle',
-                        boxWidth: window.innerWidth <= 500 ? 8 : 12,
-                        boxHeight: window.innerWidth <= 500 ? 8 : 12
+                        boxWidth: window.innerWidth <= 500 ? 10 : 12,
+                        boxHeight: window.innerWidth <= 500 ? 10 : 12
                     }
                 },
                 tooltip: {
